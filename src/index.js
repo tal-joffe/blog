@@ -25,6 +25,19 @@ const todo = (state, action) => {
                 ...state,
                 completed: !state.completed
             };
+        case 'SHOW_THIS_POST_IN_CONTENT':
+            if (state.id === action.id) {
+                return {
+                    ...state,
+                    completed: true
+                };
+            }
+            else {
+                return {
+                    ...state,
+                    completed: false
+                };
+            }
         default:
             return state;
     }
@@ -38,6 +51,10 @@ const todos = (state = [], action) => {
                 todo(undefined, action)
             ];
         case 'TOGGLE_TODO':
+            return state.map(t =>
+                todo(t, action)
+            );
+        case 'SHOW_THIS_POST_IN_CONTENT':
             return state.map(t =>
                 todo(t, action)
             );
@@ -57,6 +74,13 @@ const todoApp = combineReducers({
 const toggleTodo = (id) => {
     return {
         type: 'TOGGLE_TODO',
+        id
+    };
+};
+
+const showPostInContent = (id) => {
+    return {
+        type: 'SHOW_THIS_POST_IN_CONTENT',
         id
     };
 };
@@ -91,8 +115,7 @@ const Todo = ({
         style={{
             textDecoration:
                 completed ?
-                    'line-through' :
-                    'none'
+                    'font-weight' : 'bold'
         }}
     >
         {text}
@@ -143,7 +166,7 @@ const mapDispatchToTodoListProps = (
 ) => {
     return {
         onTodoClick: (id) => {
-            dispatch(toggleTodo(id));
+            dispatch(showPostInContent(id));
         }
     };
 };
