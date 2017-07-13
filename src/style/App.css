@@ -24,8 +24,25 @@
 }
 .side-bar {
   height: 100%;
-  width: 200px;
+  width: 20%;
   background-color: gray;
   position: fixed !important;
   right: 0;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+.post-content{
+  height: 100%;
+  width: 80%;
+  background-color: white;
+  position: fixed !important;
+  left: 0;
 }
