@@ -9,7 +9,7 @@
 
 .App-header {
   background-color: #222;
-  height: 50px;
+  height: 100px;
   padding: 20px;
   color: white;
 }
@@ -41,9 +41,11 @@
   text-align: center;
 }
 .post-content{
+  text-indent: 1%;
   height: 100%;
-  width: 80%;
+  width: 75%;
   background-color: white;
   position: fixed !important;
-  left: 0;
+  left: 1%;
+  background-color: #efefef;
 }

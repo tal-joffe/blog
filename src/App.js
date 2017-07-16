@@ -1,18 +1,16 @@
 import './style/App.css';
 import React from 'react';
+import { Route } from 'react-router-dom'
 import Header from "./components/Header"
-import SideBar from "./components/SideBar";
 import Footer from "./components/Footer"
-
-
-import ContentContainer from './containers/ContentContainer'
-import VisiblePostsList from './containers/VisiblePostsList'
+import PostsTab from './containers/PostsTab'
+import About from './components/About'
 
 const App = () => (
     <div>
         <Header/>
-        <VisiblePostsList/>
-        <ContentContainer/>
+        <Route exact path="/" component={PostsTab} />
+        <Route exact path="/about" component={About} />
         <Footer/>
     </div>
 )
