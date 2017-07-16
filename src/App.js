@@ -11,8 +11,8 @@ import VisiblePostsList from './containers/VisiblePostsList'
 const App = () => (
     <div>
         <Header/>
-        <ContentContainer/>
         <VisiblePostsList/>
+        <ContentContainer/>
         <Footer/>
     </div>
 )

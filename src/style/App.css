@@ -28,6 +28,7 @@
   background-color: gray;
   position: fixed !important;
   right: 0;
+  padding: 20px;
 }
 
 .footer {

@@ -13,7 +13,7 @@ import App from './App'
 //todo: consider https://wix.github.io/react-templates/
 
 const initialState = {//todo: get this from config or something..
-    postLinks: [{id:123, text:'hello', completed: false},{id:124, text:'hi', completed: false},{id:125, text:'previet', completed: false}]
+    postLinks: [{id:123, title:'post1', content: 'blablablbalabl', show: true},{id:124, title:'post2', content: 'fhsdnsdn', show: false},{id:125, title:'post3', content: '354ehrgsfb4hdf', show: false}]
 };
 
 ReactDOM.render(
