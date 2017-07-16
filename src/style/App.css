@@ -2,50 +2,44 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
-  background-color: #222;
-  height: 100px;
-  padding: 20px;
-  color: white;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgb(245, 245, 245);
+  background-origin: padding-box;
+  background-size: auto;
+  border-top-color: rgb(119, 132, 146);
+  border-top-style: solid;
+  border-top-width: 10px;
+  box-sizing: border-box;
+  color: rgb(67, 67, 67);
+  display: block;
+  font-family: Lato, arial, sans-serif;
+  font-size: 16px;
+  height: 150px;
+  line-height: 22.8571px;
+  padding-bottom: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 30px;
+  text-size-adjust: 100%;
 }
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
 .side-bar {
-  height: 100%;
-  width: 20%;
   background-color: gray;
-  position: fixed !important;
-  right: 0;
-  padding: 20px;
+  min-height: 800px;
+}
+.post-content{
+  background-color: white;
+  background-color: #efefef;
+  min-height: 800px;
 }
 
 .footer {
-  position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
   padding: 1rem;
-  background-color: #efefef;
+  background-color: cadetblue;
   text-align: center;
-}
-.post-content{
-  text-indent: 1%;
-  height: 100%;
-  width: 75%;
-  background-color: white;
-  position: fixed !important;
-  left: 1%;
-  background-color: #efefef;
 }

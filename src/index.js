@@ -1,4 +1,4 @@
-
+import './style/index.css';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom'
 import { Provider, connect } from 'react-redux';

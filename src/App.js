@@ -10,6 +10,7 @@ const App = () => (
     <div>
         <Header/>
         <Route exact path="/" component={PostsTab} />
+        <Route exact path="/blog" component={PostsTab} />
         <Route exact path="/about" component={About} />
         <Footer/>
     </div>
