@@ -5,3 +5,6 @@ body {
   background-color: aquamarine;
   overflow: auto;
 }
+h2{
+  margin-top: 0;
+}

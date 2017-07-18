@@ -7,12 +7,6 @@ import { ConnectedRouter } from 'react-router-redux'
 import App from './App'
 import store, { history } from './store'
 
-
-
-//todo: consider https://wix.github.io/react-templates/
-
-
-
 ReactDOM.render(
     <Provider store={store}>
         <ConnectedRouter history={history}>
