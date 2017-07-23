@@ -8,7 +8,7 @@ import App from './App'
 import store, { history } from './store'
 
 
-//todo: use code from here: https://github.com/misterfresh/react-drive-cms to write methods to get data from google Drive and render as post content
+//todo: use code from here: https://github.com/misterfresh/react-drive-cms to write methods to get data from google Drive and render as post driveID
 
 
 ReactDOM.render(
