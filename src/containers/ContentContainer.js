@@ -10,6 +10,7 @@ import PostContent from '../components/PostContent'
 const mapStateToProps = (state, ownProps) => {
     return {
         content: state.postLinks.filter(t=>t.show).map(t=>t.content),
+        title: state.postLinks.filter(t=>t.show).map(t=>t.title),
         // postLinks: state.postLinks,
         hasErrored: state.postFetchHasErrored,
         isLoading: state.postIsLoading

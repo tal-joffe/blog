@@ -7,24 +7,9 @@ import { routerMiddleware } from 'react-router-redux'
 import thunk from 'redux-thunk'
 import createHistory from 'history/createBrowserHistory'
 import rootReducer from './reducers'
-import reactLogger from 'react-logger'
 export const history = createHistory()
 
-const enhancers = []
-const middleware = [
-    thunk,
-    //routerMiddleware(history)
-    reactLogger
-]
-
-const composedEnhancers = compose(
-    applyMiddleware(...middleware),
-    ...enhancers
-)
-
 //todo: get initial state from somwhere (config? google drive list?)
-
-
 
 //get list of files under data folder
 //parse id,title and driveID(file path) and use to store as initial state
@@ -42,8 +27,6 @@ const store = createStore(
     rootReducer,
     initialState,
     applyMiddleware(thunk)
-    // applyMiddleware(middleware)
-    // composedEnhancers
 )
 
 export default store

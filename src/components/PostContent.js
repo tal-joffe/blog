@@ -33,6 +33,9 @@ class PostContent extends Component {
         }
         return (
             <div>
+                <header>
+                    <h1>{this.props.title}</h1>
+                </header>
                 <section>
                     <article dangerouslySetInnerHTML={{__html: this.props.content}}></article>
                 </section>

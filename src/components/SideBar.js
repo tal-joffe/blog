@@ -9,7 +9,7 @@ class SideBar extends React.Component {
     render() {
         return (
             <div>
-                <h2>latest posts</h2>
+                <h2>Posts</h2>
                 <PostLinkList/>
             </div>
         )

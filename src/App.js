@@ -7,11 +7,13 @@ import PostsTab from './containers/PostsTab'
 import About from './components/About'
 
 const App = () => (
-    <div className = "main-wrapper">
+    <div>
         <Header/>
-        <Route exact path="/" component={PostsTab} />
-        <Route exact path="/blog" component={PostsTab} />
-        <Route exact path="/about" component={About} />
+            <div className="main-container">
+                    <Route exact path="/" component={PostsTab}/>
+                    <Route exact path="/blog" component={PostsTab}/>
+                    <Route exact path="/about" component={About}/>
+            </div>
         <Footer/>
     </div>
 )

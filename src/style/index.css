@@ -11,22 +11,25 @@ body {
   overflow: auto;
   margin: 0;
   min-height: 100%;
+
 }
 h{
   margin-top: 0;
 }
+section{
+  padding: 10px;
+  text-align: left;
+}
 .App {
   text-align: center;
-}
-.post-content{
-  margin-top:20px;
 }
 
 .post-tab{
   padding:10px;
-  padding-bottom:60px;   /* Height of the footer */
 }
-
+.main-container{
+  padding-bottom:80px;
+}
 .App-header {
   background-attachment: scroll;
   background-clip: border-box;
@@ -55,8 +58,16 @@ h{
   min-height: 800px;
 }
 .post-content{
+  margin-top:20px;
   background-color: white;
   min-height: 800px;
+}
+
+.about{
+  margin-top:20px;
+  background-color: white;
+  min-height: 800px;
+
 }
 .row{
   margin-top: 20px;
