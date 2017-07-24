@@ -1,4 +1,4 @@
-import './style/App.css';
+import './style/index.css';
 import React from 'react';
 import { Route } from 'react-router-dom'
 import Header from "./components/Header"
@@ -7,7 +7,7 @@ import PostsTab from './containers/PostsTab'
 import About from './components/About'
 
 const App = () => (
-    <div>
+    <div className = "main-wrapper">
         <Header/>
         <Route exact path="/" component={PostsTab} />
         <Route exact path="/blog" component={PostsTab} />
