@@ -26,11 +26,11 @@
 }
 
 .side-bar {
-  background-color: gray;
+  background-color: white;
   min-height: 800px;
 }
 .post-content{
-  background-color: #efefef;
+  background-color: white;
   min-height: 800px;
 }
 .row{

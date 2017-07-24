@@ -8,7 +8,7 @@ import React from 'react'
 const Footer = () => (
     <div className="footer">
         <p>
-            the footer
+            Written by Tal Joffe
         </p>
     </div>
 )

@@ -5,6 +5,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import ContentContainer from './ContentContainer'
+import PostWrapper from './PostWrapper'
 import VisiblePostsList from './VisiblePostsList'
 import { Grid, Row, Col} from 'react-bootstrap'
 
@@ -13,7 +14,7 @@ const PostsTab = () => (
         <Grid>
             <Row>
                 <Col md={8}>
-                    <ContentContainer/>
+                    <PostWrapper/>
                 </Col>
                 <Col md={4}>
                     <VisiblePostsList/>
