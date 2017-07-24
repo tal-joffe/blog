@@ -24,9 +24,11 @@ const Header = () => (
                 <LinkContainer to="/blog">
                 <NavItem eventKey={1} href="#">Blog</NavItem>
                 </LinkContainer>
+                <LinkContainer to="/cv">
                 <NavItem eventKey={2} href="#">CV</NavItem>
+                </LinkContainer>
                 <LinkContainer to="/about">
-                <NavItem eventKey={2} href="#">About</NavItem>
+                <NavItem eventKey={3} href="#">About</NavItem>
                 </LinkContainer>
             </Nav>
         </Navbar>
