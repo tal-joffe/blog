@@ -5,7 +5,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import { Nav, Navbar, NavItem } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
-
+import MyPic from './MyPic'
 //todo: Add image, add social media links
 //todo: think about navbar... might want to use something else
 
@@ -13,6 +13,7 @@ const Header = () => (
     <div>
         <div className="App-header">
             <h2>Title</h2>
+            <MyPic/>
         </div>
         <Navbar>
             <Navbar.Header>

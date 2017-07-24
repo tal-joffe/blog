@@ -19,7 +19,8 @@ const initialState = {//todo: get this from config or something..
     postLinks: [
         {id:123, title:'post1', driveID: "0B_h-DIXAPVoiSlRBSzJYNEdPaEE", content:null, show: true},
         {id:124, title:'post2', driveID: '0B_h-DIXAPVoiaEZSUlRiOFBHaFk', content:null, show: false},
-        {id:125, title:'post3', driveID: '0B_h-DIXAPVoiYVhwNF9ZazZHZ2c', content:null, show: false}
+        {id:125, title:'post3', driveID: '0B_h-DIXAPVoiYVhwNF9ZazZHZ2c', content:null, show: false},
+        {id:126, title:'post4', driveID: '16QIUK3dv6YEWbegNx9-QyE9zYSxAqYMf2KxGG3HpvRM', content:null, show: false}
     ]
 }
 
