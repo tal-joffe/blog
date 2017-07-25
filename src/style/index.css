@@ -45,6 +45,7 @@ section{
   font-family: Lato, arial, sans-serif;
   font-size: 16px;
   height: 150px;
+  width:100%;
   line-height: 22.8571px;
   padding-bottom: 30px;
   padding-left: 0px;
@@ -52,6 +53,17 @@ section{
   padding-top: 30px;
   text-size-adjust: 100%;
 }
+
+.profile-pic {
+  margin-left:2%;
+  float:left;
+  height:80px;
+  width:70px;
+  border-radius: 50%;
+}
+
+
+
 .side-bar {
   background-color: white;
   min-height: 800px;
@@ -85,3 +97,4 @@ section{
   color: white;
   font-style: oblique;
 }
+

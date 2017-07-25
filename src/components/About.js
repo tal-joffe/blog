@@ -5,7 +5,6 @@
 
 import React from 'react'
 import { Grid, Row, Col} from 'react-bootstrap'
-//todo: add content here
 
 const About = () => (
     <div className="post-tab">
