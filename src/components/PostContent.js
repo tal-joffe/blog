@@ -9,7 +9,7 @@ import config from '../config'
 
 //todo: read posts from posts library
 //todo: add search option for posts. will probably need to add post metadata for search
-
+//todo: add tag List component to content view
 
 class PostContent extends Component {
     constructor(props) {

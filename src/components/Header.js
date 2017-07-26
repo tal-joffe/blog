@@ -16,10 +16,12 @@ import profilePic from '../data/profilePic.png'
 const Header = () => (
     <div>
         <div className="App-header">
-            <MyPic/>
-            <div style={{marginLeft: '60px'}}>
-                <h4>Tal Joffe</h4>
-                <div style={{fontSize: '.6em', float: 'left'}}>My personal site about software and stuff</div>
+            <div style = {{  marginLeft: '2%', float: 'left'}}>
+                <MyPic/>
+            </div>
+            <div>
+                <h4 style = {{fontSize: '18px', margin: '0', marginTop: '30px'}} >Tal Joffe</h4>
+                <p style = {{fontSize: '14px'}} >My personal site about software and stuff</p>
             </div>
         </div>
         <Navbar>
@@ -35,7 +37,6 @@ const Header = () => (
                 </LinkContainer>
             </Nav>
         </Navbar>
-
     </div>
 )
 

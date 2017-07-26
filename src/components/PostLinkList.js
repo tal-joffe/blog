@@ -6,7 +6,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-
+//todo: use some sidebar styling for postlinks
 const PostLink = ({
                       onClick,
                       show,

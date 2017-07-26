@@ -8,6 +8,9 @@ import App from './App'
 import store, { history } from './store'
 
 
+//todo: add proptyes to all relevant components
+
+
 ReactDOM.render(
     <Provider store={store}>
         <ConnectedRouter history={history}>

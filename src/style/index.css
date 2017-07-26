@@ -55,11 +55,9 @@ section{
 }
 
 .profile-pic {
-  margin-left:2%;
-  float:left;
-  height:80px;
-  width:70px;
-  border-radius: 50%;
+  /*height:80px;*/
+  /*width:70px;*/
+  /*border-radius: 50%;*/
 }
 
 
