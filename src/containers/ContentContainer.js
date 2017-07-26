@@ -5,19 +5,24 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PostContent from '../components/PostContent'
+import { fetchAndDisplayPostInContent } from '../actions'
 
 
 const mapStateToProps = (state, ownProps) => {
+    var activeState = state.postLinks.filter(t=>t.show)[0]
     return {
-        content: state.postLinks.filter(t=>t.show).map(t=>t.content),
-        title: state.postLinks.filter(t=>t.show).map(t=>t.title),
-        // postLinks: state.postLinks,
+        defaultPost: state.postLinks[0],
+        content: activeState.content,
+        title: activeState.title,
+        tags: activeState.tags,
+        postDate: activeState.postDate,
         hasErrored: state.postFetchHasErrored,
         isLoading: state.postIsLoading
      }
 }
 const ContentContainer = connect(
-    mapStateToProps
+    mapStateToProps,
+    { fetchAndDisplayPostInContent }
 )(PostContent)
 
 

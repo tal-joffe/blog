@@ -54,6 +54,11 @@ section{
   text-size-adjust: 100%;
 }
 
+.postDateSubTitle{
+  margin-left: 3%;
+  color: rgb(100,100,100);
+  font-style: italic;
+}
 .profile-pic {
   /*height:80px;*/
   /*width:70px;*/

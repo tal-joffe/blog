@@ -7,7 +7,6 @@ import marked from "marked"
 import config from '../config'
 
 
-//todo: read posts from posts library
 //todo: add search option for posts. will probably need to add post metadata for search
 //todo: add tag List component to content view
 
@@ -36,12 +35,16 @@ class PostContent extends Component {
             <div>
                 <header>
                     <h1>{this.props.title}</h1>
+                    <p className="postDateSubTitle">{this.props.postDate}<time datetime={this.props.postDate} pubdate></time></p>
                 </header>
                 <section>
                     <article dangerouslySetInnerHTML={{__html: this.props.content}}></article>
                 </section>
             </div>
         )
+    }
+    componentDidMount() {
+        this.props.fetchAndDisplayPostInContent(this.props.defaultPost.id,this.props.defaultPost.driveID)
     }
 }
 
