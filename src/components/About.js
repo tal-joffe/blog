@@ -25,7 +25,7 @@ const About = () => (
                                 <br />This site was created as a learning project for me and a place to share my thoughts on my latest technoloigcal transition.
                                 <br /><br />I hold a Bsc in Computers Engineering and an MBA from the Technion university.
                                 <br /><br />I live in Hadera Israel with my lovely wife and 2 amazing kids.
-                                <br />I enjoy playing basketball, playing with my kids and playing computer games (not in that order necessarily :) )
+                                <br />Other than software, I enjoy playing basketball, playing with my kids and playing computer games (not in that order necessarily :) )
                                 <br /><br /></p>
                         </article>
                         </section>
