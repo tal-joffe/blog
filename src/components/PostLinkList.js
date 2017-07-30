@@ -5,6 +5,7 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
+import { ListGroup, ListGroupItem } from 'react-bootstrap'
 
 //todo: use some sidebar styling for postlinks
 const PostLink = ({
@@ -42,6 +43,10 @@ const PostLinkList = ({
         </ul>
     </div>
 )
+        // <ListGroup>
+        //
+        //     <ListGroupItem onClick={() => onPostLinkClick(postLink.id,postLink.driveID)}></ListGroupItem>
+        // </ListGroup>
 
 // PostLinkList.propTypes = {
 //     todos: PropTypes.arrayOf(

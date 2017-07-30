@@ -5,10 +5,19 @@
 import React, { Component } from 'react'
 import marked from "marked"
 import config from '../config'
+import { Label } from 'react-bootstrap'
 
 
 //todo: add search option for posts. will probably need to add post metadata for search
-//todo: add tag List component to content view
+
+const Tags = ({tags}) => (
+    <div>
+        {tags.map(tag =>
+            <Label>{tag} </Label>
+        )}
+    </div>
+)
+
 
 class PostContent extends Component {
     constructor(props) {
@@ -40,6 +49,7 @@ class PostContent extends Component {
                 <section>
                     <article dangerouslySetInnerHTML={{__html: this.props.content}}></article>
                 </section>
+                <Tags tags={this.props.tags}/>
             </div>
         )
     }
