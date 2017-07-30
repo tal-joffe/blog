@@ -48,15 +48,19 @@ const PostLinkList = ({
         //     <ListGroupItem onClick={() => onPostLinkClick(postLink.id,postLink.driveID)}></ListGroupItem>
         // </ListGroup>
 
-// PostLinkList.propTypes = {
-//     todos: PropTypes.arrayOf(
-//         PropTypes.shape({
-//             id: PropTypes.number.isRequired,
-//             completed: PropTypes.bool.isRequired,
-//             text: PropTypes.string.isRequired
-//         }).isRequired
-//     ).isRequired,
-//     onPostLinkClick: PropTypes.func.isRequired
-// }
+PostLinkList.propTypes = {
+    postLinks: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            driveID: PropTypes.string.isRequired,
+            show: PropTypes.bool.isRequired,
+            content: PropTypes.string,
+            postDate: PropTypes.string.isRequired,
+            tags:PropTypes.arrayOf(PropTypes.string.isRequired)
+
+        }).isRequired
+    ).isRequired,
+    onPostLinkClick: PropTypes.func.isRequired
+}
 
 export default PostLinkList

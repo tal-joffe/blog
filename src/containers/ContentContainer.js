@@ -8,7 +8,7 @@ import PostContent from '../components/PostContent'
 import { fetchAndDisplayPostInContent } from '../actions'
 
 
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = (state) => {
     var activeState = state.postLinks.filter(t=>t.show)[0]
     return {
         defaultPost: state.postLinks[0],

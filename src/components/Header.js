@@ -2,16 +2,12 @@
  * Created by Tal on 7/11/17.
  */
 import React from 'react';
-import { Link } from 'react-router-dom'
 import { Nav, Navbar, NavItem } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 import MyPic from './MyPic'
 
 
 //todo: add social media links
-
-
-import profilePic from '../data/profilePic.png'
 
 const Header = () => (
     <div>

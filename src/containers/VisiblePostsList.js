@@ -2,7 +2,6 @@
  * Created by Tal on 7/16/17.
  */
 
-import React from 'react';
 import { connect } from 'react-redux';
 import { fetchAndDisplayPostInContent } from '../actions'
 import PostLinkList from '../components/PostLinkList'

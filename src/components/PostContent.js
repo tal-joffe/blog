@@ -3,8 +3,6 @@
  */
 
 import React, { Component } from 'react'
-import marked from "marked"
-import config from '../config'
 import { Label } from 'react-bootstrap'
 
 
@@ -13,16 +11,13 @@ import { Label } from 'react-bootstrap'
 const Tags = ({tags}) => (
     <div>
         {tags.map(tag =>
-            <Label>{tag} </Label>
+            <Label key={tag}>{tag} </Label>
         )}
     </div>
 )
 
 
 class PostContent extends Component {
-    constructor(props) {
-        super(props)
-    }
 
     render() {
         // const { markdown } = this.state;
@@ -44,7 +39,7 @@ class PostContent extends Component {
             <div>
                 <header>
                     <h1>{this.props.title}</h1>
-                    <p className="postDateSubTitle">{this.props.postDate}<time datetime={this.props.postDate} pubdate></time></p>
+                    <p className="postDateSubTitle">{this.props.postDate}</p>
                 </header>
                 <section>
                     <article dangerouslySetInnerHTML={{__html: this.props.content}}></article>
@@ -57,5 +52,16 @@ class PostContent extends Component {
         this.props.fetchAndDisplayPostInContent(this.props.defaultPost.id,this.props.defaultPost.driveID)
     }
 }
+
+// PostLinkList.propTypes = {
+//     todos: PropTypes.arrayOf(
+//         PropTypes.shape({
+//             id: PropTypes.number.isRequired,
+//             completed: PropTypes.bool.isRequired,
+//             text: PropTypes.string.isRequired
+//         }).isRequired
+//     ).isRequired,
+//     onPostLinkClick: PropTypes.func.isRequired
+// }
 
 export default PostContent;
