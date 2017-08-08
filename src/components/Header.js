@@ -15,7 +15,7 @@ const Header = () => (
             <div style = {{  marginLeft: '2%', float: 'left'}}>
                 <MyPic/>
             </div>
-            <div>
+            <div className="header-description">
                 <h4 style = {{fontSize: '18px', margin: '0', marginTop: '30px'}} >Tal Joffe</h4>
                 <p style = {{fontSize: '14px'}} >My personal site about software and stuff</p>
             </div>

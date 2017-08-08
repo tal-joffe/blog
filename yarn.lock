@@ -5130,6 +5130,10 @@ react-scripts@1.0.10:
   optionalDependencies:
     fsevents "1.1.2"
 
+react-search@^2.0.5:
+  version "2.0.5"
+  resolved "https://repo.exelator.net:4873/react-search/-/react-search-2.0.5.tgz#ae643095f4901fff0d86afadbebf5c5b2c31829b"
+
 react-thunk@^1.0.0:
   version "1.0.0"
   resolved "https://repo.exelator.net:4873/react-thunk/-/react-thunk-1.0.0.tgz#79813d47f31147e81aee841ed5e76a9e3eabc8b1"

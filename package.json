@@ -13,6 +13,7 @@
     "react-router-bootstrap": "^0.24.2",
     "react-router-dom": "^4.1.1",
     "react-router-redux": "next",
+    "react-search": "^2.0.5",
     "react-thunk": "^1.0.0",
     "redux": "^3.7.1",
     "redux-thunk": "^2.2.0",

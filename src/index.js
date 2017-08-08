@@ -9,7 +9,6 @@ import store, { history } from './store'
 
 
 //todo: add proptyes to all relevant components
-//todo: consider moving scrolling to
 
 
 ReactDOM.render(

@@ -3,11 +3,21 @@
  */
 
 
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { ListGroup, ListGroupItem } from 'react-bootstrap'
+import Search from 'react-search'
+import '../style/react-search.css';
 
 //todo: use some sidebar styling for postlinks
+
+
+function extractTags(posts) {
+    const tags = posts.map((post)=>post.tags)
+    const flattenTags = [].concat(...tags)
+    const uniqueFlattenTags =  [...new Set(flattenTags)]
+    return uniqueFlattenTags
+}
+
 const PostLink = ({
                       onClick,
                       show,
@@ -31,23 +41,13 @@ const PostLinkList = ({
                           onPostLinkClick
                       }) => (
     <div className="side-bar">
-        <h2>latest posts</h2>
-        <ul>
-            {postLinks.map(postLink =>
-                <PostLink
-                    key={postLink.id}
-                    {...postLink}
-                    onClick={() => onPostLinkClick(postLink.id,postLink.driveID)}
-                />
-            )}
-        </ul>
+        <h2>Posts</h2>
+        <h4>Search post by title</h4>
+        <Search items={postLinks.map((post)=>{return {id: post.id, value: post.title}})} />
+        <h4>Search post by tags</h4>
+        <Search items={extractTags(postLinks).map((tag)=>{return {id: tag, value: tag}})} />
     </div>
 )
-        // <ListGroup>
-        //
-        //     <ListGroupItem onClick={() => onPostLinkClick(postLink.id,postLink.driveID)}></ListGroupItem>
-        // </ListGroup>
-
 PostLinkList.propTypes = {
     postLinks: PropTypes.arrayOf(
         PropTypes.shape({

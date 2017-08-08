@@ -33,14 +33,14 @@ section{
 .App-header {
   background-attachment: scroll;
   background-clip: border-box;
-  background-color: rgb(245, 245, 245);
+  background-color: #353A4D;
   background-origin: padding-box;
   background-size: auto;
   border-top-color: rgb(119, 132, 146);
   border-top-style: solid;
   border-top-width: 10px;
   box-sizing: border-box;
-  color: rgb(67, 67, 67);
+  color: #F1F4FF;
   display: block;
   font-family: Lato, arial, sans-serif;
   font-size: 16px;
@@ -52,6 +52,10 @@ section{
   padding-right: 0px;
   padding-top: 30px;
   text-size-adjust: 100%;
+}
+.header-description{
+  margin-left: 10px;
+  float: left;
 }
 
 .postDateSubTitle{

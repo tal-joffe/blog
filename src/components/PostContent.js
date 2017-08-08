@@ -4,9 +4,12 @@
 
 import React, { Component } from 'react'
 import { Label } from 'react-bootstrap'
+import PropTypes from 'prop-types'
 
 
 //todo: add search option for posts. will probably need to add post metadata for search
+//todo: add colors to tag
+//todo: add onClick on tags that will redirect to search results for this tag
 
 const Tags = ({tags}) => (
     <div>
@@ -20,7 +23,6 @@ const Tags = ({tags}) => (
 class PostContent extends Component {
 
     render() {
-        // const { markdown } = this.state;
         if (this.props.hasErrored) {
             return <p>Sorry! There was an error loading the items</p>;
         }
@@ -53,15 +55,24 @@ class PostContent extends Component {
     }
 }
 
-// PostLinkList.propTypes = {
-//     todos: PropTypes.arrayOf(
-//         PropTypes.shape({
-//             id: PropTypes.number.isRequired,
-//             completed: PropTypes.bool.isRequired,
-//             text: PropTypes.string.isRequired
-//         }).isRequired
-//     ).isRequired,
-//     onPostLinkClick: PropTypes.func.isRequired
-// }
+PostContent.propTypes = {
+    defaultPost: PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        driveID: PropTypes.string.isRequired,
+        show: PropTypes.bool.isRequired,
+        content: PropTypes.string,
+        postDate: PropTypes.string.isRequired,
+        tags:PropTypes.arrayOf(PropTypes.string.isRequired)
+
+    }).isRequired,
+    content: PropTypes.string,
+    title: PropTypes.string.isRequired,
+    tags: PropTypes.arrayOf(
+        PropTypes.string.isRequired
+    ).isRequired,
+    postDate: PropTypes.string.isRequired,
+    hasErrored: PropTypes.bool.isRequired,
+    isLoading: PropTypes.bool.isRequired
+}
 
 export default PostContent;
